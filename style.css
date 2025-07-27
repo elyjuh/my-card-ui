@@ -1,0 +1,139 @@
+* {
+    margin: none;
+    padding: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --body: #F5F5F5;
+    --background:#FFFFFF;
+    --verified-blue: #1D9BF0;
+    --button-hover: #333333;
+    --button-icon-hover: #F2F2F2;
+    --yellow-star: #ffef0c;
+    --text: #666666;
+}
+
+body {
+    background-color: var(--body);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    background: var(--background);
+    width: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+}
+
+.card-header {
+    position: relative;
+    height: 400px; 
+    background: url("slayverine.jpg") center/cover no-repeat;
+}
+
+.card-content {
+    padding: 20px;;
+}
+
+.name-row {
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.name-row svg {
+    fill: var(--verified-blue);
+    width: 35px;
+    height: 35px;
+}
+
+.description {
+    font-size: 15px;
+    color: var(--text);
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.stat-item {
+    padding: 10px 20px;
+}
+.stat-item .value {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.stat-item .label {
+    font-size: 12px;
+    color: #777777;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 4px;
+}
+
+.value .icon {
+    width: 1.5em;
+    height: 1.2em;
+    fill: gold;
+}
+
+.actions {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.btn-primary {
+    flex: 1;
+    background-color: #1D1D1D;
+    color: var(--background);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 42px;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover);
+}
+
+.btn-icon {
+    background: none;
+    border: 1px solid #DDDDDD;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: var(--button-icon-hover);
+}
+
+.bookmark-icon {
+    width: 18px;
+    height: 18px;
+    stroke: #444444;
+}
